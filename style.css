@@ -1,0 +1,172 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #45a049;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-light: #f9f9f9;
+    --footer-bg: #333;
+    --footer-text: #ccc;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: 300;
+}
+
+.about-us {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-us h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.sidebar-header {
+    
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-top: 1.5rem;
+}
+
+.section-header {
+    
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.dog-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+
+.dog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dog-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dog-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.dog-card p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Streamlit elements styling */
+.stButton>button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.stButton>button:hover {
+    background-color: var(--primary-dark);
+}
+
+.stTextInput>div>div>input {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: black;
+}
+
+.favorite-dog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.pagination {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .stButton>button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}}
