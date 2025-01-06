@@ -16,7 +16,6 @@ The Dog Adoption Platform is a user-friendly application designed to connect pot
 - **Frontend**: CSS
 - **Backend**: Streamlit
 - **Database**: sql
-
 - **Hosting**: Deployed on Heroku (specify as applicable).
 
 **Let’s help more dogs find their forever homes! 🐶**
